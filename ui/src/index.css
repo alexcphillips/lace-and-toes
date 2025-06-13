@@ -1,0 +1,43 @@
+/* Light theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #1a73e8;
+    --header-bg: #f1f1f1;
+    --footer-bg: #f8f8f8;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --background-color: rgb(18 18 18);
+    --text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --header-bg: #1f1f1f;
+    --footer-bg: #1a1a1a;
+}
+
+/* Apply variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+header,
+footer {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--footer-bg);
+}

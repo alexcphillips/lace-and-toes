@@ -1,0 +1,23 @@
+/* SearchInput.theme.css */
+[data-theme="dark"] .searchInput {
+    background-color: #333;
+}
+
+[data-theme="dark"] .inputField {
+    background-color: #555;
+    color: white;
+    border-color: #666;
+}
+
+[data-theme="dark"] .inputField:focus {
+    border-color: #007bff;
+}
+
+[data-theme="dark"] .searchButton {
+    background-color: #007bff;
+    color: white;
+}
+
+[data-theme="dark"] .searchButton:hover {
+    background-color: #0056b3;
+}
