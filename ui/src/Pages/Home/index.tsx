@@ -2,8 +2,11 @@ import css from "./index.module.css";
 import SearchInput from "../../Components/SearchInput";
 
 export default function Home() {
-    const handleSearch = (query: string) =>
+    const books = [<Card></Card>];
+    const handleSearch = (query: string) => {
         console.log("you searched for:", query);
+        return books[query];
+    };
 
     const title = "Page Turners Anonymous Book Club";
     return (
